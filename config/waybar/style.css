@@ -1,0 +1,100 @@
+* {
+  all: unset;
+  font-family: "Fira Code", monospace;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+window#waybar {
+  background-color: rgba(30, 30, 46, 0.85);
+  color: #cdd6f4;
+  border: 1px solid rgba(201, 176, 238, 0.2);
+  border-radius: 0;
+  padding: 4px 8px;
+}
+
+#workspaces {
+  margin-right: 20px;
+  padding: 0 10px;
+}
+
+#workspaces button {
+  padding: 4px 8px;
+  color: #89b4fa;
+  background-color: rgba(137, 180, 250, 0.1);
+  border-radius: 4px;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+  background-color: rgba(137, 180, 250, 0.2);
+  color: #c9b0ee;
+}
+
+#workspaces button.active {
+  background-color: rgba(201, 176, 238, 0.3);
+  color: #c9b0ee;
+  font-weight: bold;
+}
+
+#workspaces button.urgent {
+  background-color: rgba(243, 139, 168, 0.3);
+  color: #f38ba8;
+}
+
+#clock {
+  padding: 4px 12px;
+  color: #cdd6f4;
+  background-color: rgba(137, 180, 250, 0.1);
+  border-radius: 4px;
+}
+
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#battery {
+  padding: 4px 10px;
+  margin: 0 4px;
+  color: #cdd6f4;
+  background-color: rgba(89, 179, 194, 0.1);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#network:hover,
+#pulseaudio:hover,
+#battery:hover {
+  background-color: rgba(89, 179, 194, 0.2);
+  color: #94e2d5;
+}
+
+#battery.charging {
+  color: #a6e3a1;
+  background-color: rgba(166, 227, 161, 0.1);
+}
+
+#battery.critical {
+  color: #f38ba8;
+  background-color: rgba(243, 139, 168, 0.1);
+}
+
+#temperature.critical {
+  color: #f38ba8;
+  background-color: rgba(243, 139, 168, 0.1);
+}
+
+#network.disconnected {
+  color: #f38ba8;
+  background-color: rgba(243, 139, 168, 0.1);
+}
+
+#pulseaudio.muted {
+  color: #a89984;
+  background-color: rgba(168, 153, 132, 0.1);
+}

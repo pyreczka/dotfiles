@@ -1,0 +1,15 @@
+configuration {
+    modes: "drun,run,ssh";
+    font: "Fira Code 12";
+    icon-theme: "Papirus";
+    display-drun: "Apps";
+    display-run: "Run";
+    display-ssh: "SSH";
+    drun-display-format: "{name}";
+    window-format: "{w} {c} {t}";
+    click-to-exit: true;
+    disable-history: false;
+    sidebar-mode: false;
+}
+
+@import "aero.rasi"

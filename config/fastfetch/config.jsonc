@@ -1,0 +1,84 @@
+{
+  "logo": {
+    "source": "arch",
+    "width": 32,
+    "height": 16,
+    "padding": {
+      "right": 2
+    }
+  },
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "${color_cyan}",
+      "title": "${color_blue}"
+    },
+    "showErrors": false
+  },
+  "modules": [
+    {
+      "type": "title",
+      "format": "{user}@{hostname}"
+    },
+    {
+      "type": "separator",
+      "string": "────────────────────"
+    },
+    {
+      "type": "os",
+      "key": "OS"
+    },
+    {
+      "type": "kernel",
+      "key": "Kernel"
+    },
+    {
+      "type": "uptime",
+      "key": "Uptime"
+    },
+    {
+      "type": "shell",
+      "key": "Shell"
+    },
+    {
+      "type": "wm",
+      "key": "WM"
+    },
+    {
+      "type": "wm theme",
+      "key": "Theme"
+    },
+    {
+      "type": "terminal",
+      "key": "Terminal"
+    },
+    {
+      "type": "cpu",
+      "key": "CPU",
+      "showTemp": true,
+      "tempUnit": "C"
+    },
+    {
+      "type": "gpu",
+      "key": "GPU"
+    },
+    {
+      "type": "memory",
+      "key": "Memory",
+      "format": "{used}/{total} ({percent}%)"
+    },
+    {
+      "type": "disk",
+      "key": "Disk (/)",
+      "folders": [
+        "/"
+      ]
+    },
+    {
+      "type": "colors",
+      "key": "Colors",
+      "symbol": "circle",
+      "symbolFormat": "{symbol}"
+    }
+  ]
+}
