@@ -9,10 +9,6 @@
   },
   "display": {
     "separator": "  ",
-    "color": {
-      "keys": "${color_cyan}",
-      "title": "${color_blue}"
-    },
     "showErrors": false
   },
   "modules": [
@@ -22,7 +18,7 @@
     },
     {
       "type": "separator",
-      "string": "────────────────────"
+      "string": "────────────────────────────"
     },
     {
       "type": "os",
